@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+}
+
+p , h3 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.cabecalho   {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.cabecalho-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 60px;
+  justify-content: center;
+}
+
+.cabecalho-menu a {
+  color: black;
+  background-color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+main {
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 120px;
+  width: 1000px;
+}
+
+.conteudo {  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  background-color: #fff;
+}
+
+.conteudo-principal-escrito {
+  justify-content: center;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: end;
+}
+
+
+.conteudo-principal-escrito h1{
+  font-size: 30px;
+}
+
+
+.conteudo-principal-escrito p {
+  width: 400px;
+  font-size: 20px;
+}
+
+.conteudo-img {
+  position: relative;
+}
+
+.conteudo-img::before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 70px;
+  left: -30px;
+  top: 30px;
+  background-color: #ee2211;
+}
+
+.conteudo-img-bike {
+  max-width: 100%;
+}
+
+.botao-ver-mais {
+  background-color: #ee2211;
+  color: #f7f7f7;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+}
+
+.conteudo-secundario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+}
+
+.vantagens-subtitulo {
+  text-wrap: wrap;
+  font-size: 64px;
+  text-align: end;
+  color: #c6c6c6;
+}
+
+.vantagens-lista {
+  background-color: #fff;
+  padding: 40px;
+}
+
+
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 20px;
+
+  padding: 20px;
+
+}
+
+.vantagens-item p {
+  grid-column: 2;
+}
+
+
+.rodape {
+  font-weight: bold;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+}
