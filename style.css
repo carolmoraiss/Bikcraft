@@ -131,7 +131,7 @@ main {
 }
 
 .vantagens-lista .vantagens-item:nth-child(odd) {
-  background-color: rgb(247, 246, 246);
+  background-color: #f7f7f7;
 }
 
 .vantagens-item {
@@ -139,6 +139,11 @@ main {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;  
+}
+
+.vantagens-item:hover {
+ border-color:  #ee2211;  
 }
 
 .vantagens-item p {
