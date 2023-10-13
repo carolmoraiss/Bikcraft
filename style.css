@@ -1,7 +1,31 @@
+:root  {
+  --fundo-1: #f7f7f7;
+  --fundo-2: #fff;
+  --fonte-primaria: #000;
+  --cor-primaria:  #ee2211; 
+  --cor-primaria-escura:  #bb1e0f;
+  --cinza: #c6c6c6;
+}
+
+@media(prefers-color-scheme: dark) {
+
+  :root {
+    --fundo-1: #111;
+    --fundo-2: #000;
+    --fonte-primaria: #fff;
+    --cor-primaria:  #ee2211; 
+    --cor-primaria-escura:  #bb1e0f;
+    --cinza: #c6c6c6;
+  }
+}
+ 
+
+
 body {
+  color: var(--fonte-primaria);
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1);
 }
 
 p, h3 {
@@ -26,8 +50,8 @@ a {
 }
 
 .cabecalho-menu a {
-  color: black;
-  background-color: #fff;
+  color: var(--fonte-primaria);
+  background-color: var(--fundo-2);
   padding: 10px 20px;
   text-transform: uppercase;
   font-weight: bold;
@@ -35,7 +59,7 @@ a {
 
 .cabecalho-menu a:hover {
   transition: 0.3s;
-  box-shadow: inset 0 0 0 2px #ee2211; 
+  box-shadow: inset 0 0 0 2px var(--cor-primaria);
   outline: none; 
 }
 
@@ -51,7 +75,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  background-color: #fff;
+  background-color: var(--fundo-2);
 }
 
 .conteudo-principal-escrito {
@@ -61,6 +85,7 @@ main {
   flex-direction: column;
   gap: 5px;
   align-items: end;
+
 }
 
 
@@ -86,7 +111,7 @@ main {
   width: 70px;
   left: -30px;
   top: 30px;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
 }
 
 .conteudo-img-bike {
@@ -98,8 +123,8 @@ main {
 }
 
 .botao-ver-mais {
-  background-color: #ee2211;
-  color: #f7f7f7;
+  background-color: var(--cor-primaria);
+  color: var(--fonte-primaria);
   padding: 15px 30px;
   display: inline-block;
   border-radius: 4px;
@@ -110,7 +135,7 @@ main {
 
 .botao-ver-mais:hover {
   transition: 0.3s;
-  background-color: #bb1e0f;
+  background-color: var(--cor-primaria-escura);
 }
 
 .conteudo-secundario {
@@ -125,17 +150,17 @@ main {
   text-wrap: wrap;
   font-size: 4rem;
   text-align: end;
-  color: #c6c6c6;
+  color: var(--cinza);
   align-self: center;
 }
 
 .vantagens-lista {
-  background-color: #fff;
+  background-color: var(--fundo-2);
   padding: 40px;
 }
 
 .vantagens-lista .vantagens-item:nth-child(odd) {
-  background-color: #f7f7f7;
+  background-color: var(--fundo-1)
 }
 
 .vantagens-item {
@@ -147,7 +172,7 @@ main {
 }
 
 .vantagens-item:hover {
- border-color:  #ee2211;  
+ border-color:  var(--cor-primaria);  
 }
 
 .vantagens-item p {
@@ -158,7 +183,7 @@ main {
 .rodape {
   font-weight: bold;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--fundo-2);
   padding: 20px;
   margin-bottom: 0px;
 }
@@ -212,7 +237,7 @@ main {
     font-size: 3rem;
     text-align: center;
   }
-  
-
 }
+
+
 
